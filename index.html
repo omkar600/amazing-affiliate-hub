@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazing Affiliate Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+    .sticky-header {
+      transition: all 0.3s ease;
+    }
+    .sticky-header.scrolled {
+      background-color: rgba(30, 64, 175, 0.95);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .affiliate-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .affiliate-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+  <!-- Header -->
+  <header class="sticky-header fixed top-0 w-full z-50 bg-blue-800 text-white py-4">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Amazing Affiliate Hub</h1>
+      <nav>
+        <a href="#affiliates" class="px-4 hover:text-blue-300">Affiliates</a>
+        <a href="#testimonials" class="px-4 hover:text-blue-300">Testimonials</a>
+        <a href="#contact" class="px-4 hover:text-blue-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center text-center py-20">
+    <div class="container mx-auto px-4" data-aos="fade-up">
+      <h2 class="text-5xl font-extrabold text-gray-900 mb-4">Discover Our Top Picks!</h2>
+      <p class="text-xl text-gray-700 mb-8">Explore handpicked tools, courses, and gear curated just for you.</p>
+      <a href="#affiliates" class="bg-blue-600 text-white py-3 px-6 rounded-full text-lg hover:bg-blue-700 transition">Browse Now</a>
+    </div>
+  </section>
+
+  <!-- Featured Categories -->
+  <section id="affiliates" class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Featured Categories</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Programming Tools -->
+        <div class="affiliate-card bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://via.placeholder.com/300x200" alt="Programming Tools" class="w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-gray-900">Programming Tools</h3>
+          <p class="text-gray-600 mt-2">Essential dev tools to boost your productivity.</p>
+          <a href="tools.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition">Explore Tools</a>
+        </div>
+        <!-- Fitness Gears -->
+        <div class="affiliate-card bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://via.placeholder.com/300x200" alt="Fitness Gear" class="w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-gray-900">Fitness Gears</h3>
+          <p class="text-gray-600 mt-2">High-quality gear to elevate your workouts.</p>
+          <a href="gears.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition">Shop Fitness</a>
+        </div>
+        <!-- Courses -->
+        <div class="affiliate-card bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="300">
+          <img src="https://via.placeholder.com/300x200" alt="Courses" class="w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-gray-900">Online Courses</h3>
+          <p class="text-gray-600 mt-2">Top-rated courses to expand your skills.</p>
+          <a href="courses.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition">View Courses</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe Form -->
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6" data-aos="fade-up">Stay Updated</h2>
+      <p class="text-center text-gray-600 mb-6">Subscribe to get the latest updates on tools, gear, and deals.</p>
+      <form action="https://formsubmit.co/omkarjgore20@example.com" method="POST" class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto" data-aos="fade-up">
+        <input type="email" name="email" required placeholder="Enter your email" class="flex-1 px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">What Our Users Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+          <p class="text-gray-600">"Found amazing tools I never knew I needed. Thanks!"</p>
+          <p class="mt-4 font-semibold text-gray-900">Alex R.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+          <p class="text-gray-600">"Great collection of fitness products. Loving it!"</p>
+          <p class="mt-4 font-semibold text-gray-900">Lina W.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+          <p class="text-gray-600">"The courses helped me level up my coding game."</p>
+          <p class="mt-4 font-semibold text-gray-900">Devon T.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
+      <p class="text-gray-400 mb-4">Email us at <a href="mailto:support@affiliatehub.com" class="underline hover:text-blue-400">support@affiliatehub.com</a></p>
+      <p class="text-gray-400">© 2025 Amazing Affiliate Hub. All rights reserved.</p>
+      <p class="text-gray-400 mt-2">Disclosure: We may earn a commission from links on this page at no extra cost to you.</p>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init();
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('.sticky-header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
