@@ -3,56 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Programming Tools | Amazing Affiliate Hub</title>
+  <title>Programming Tools – Amazing Affiliate Hub</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+    .affiliate-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .affiliate-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="bg-blue-800 text-white py-4 sticky top-0 z-50 shadow-md">
+<body class="font-sans text-gray-800">
+  <!-- Header -->
+  <header class="bg-blue-800 text-white py-4">
     <div class="container mx-auto px-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold">Amazing Affiliate Hub</h1>
       <nav>
         <a href="index.html" class="px-4 hover:text-blue-300">Home</a>
+        <a href="#tools" class="px-4 hover:text-blue-300">Tools</a>
         <a href="#contact" class="px-4 hover:text-blue-300">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="py-20">
+  <!-- Tools Section -->
+  <section id="tools" class="py-20">
     <div class="container mx-auto px-4">
       <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Top Programming Tools</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
-          <img src="https://via.placeholder.com/300x200" alt="VS Code" class="w-full h-48 object-cover rounded-md mb-4">
-          <h3 class="text-xl font-semibold">Visual Studio Code</h3>
-          <p class="text-gray-600 mt-2">Fast, lightweight code editor packed with features.</p>
-          <a href="https://code.visualstudio.com/" target="_blank" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition">Get VS Code</a>
+        <!-- Visual Studio Code -->
+        <div class="affiliate-card bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="Visual Studio Code" class="w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-gray-900">Visual Studio Code</h3>
+          <p class="text-gray-600 mt-2">A powerful, lightweight code editor developed by Microsoft.</p>
+          <a href="https://code.visualstudio.com/" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition" target="_blank">Download Now</a>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
-          <img src="https://via.placeholder.com/300x200" alt="GitHub" class="w-full h-48 object-cover rounded-md mb-4">
-          <h3 class="text-xl font-semibold">GitHub</h3>
-          <p class="text-gray-600 mt-2">Host and review code, manage projects, and build software.</p>
-          <a href="https://github.com/" target="_blank" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition">Visit GitHub</a>
+        <!-- GitHub -->
+        <div class="affiliate-card bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+          <img src="data:image/png;base64,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" alt="GitHub" class="w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-gray-900">GitHub</h3>
+          <p class="text-gray-600 mt-2">Host and review code, manage projects, and build software alongside millions of developers.</p>
+          <a href="https://github.com/" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition" target="_blank">Explore GitHub</a>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="300">
-          <img src="https://via.placeholder.com/300x200" alt="Notion" class="w-full h-48 object-cover rounded-md mb-4">
-          <h3 class="text-xl font-semibold">Notion</h3>
-          <p class="text-gray-600 mt-2">Plan, write and organize — all in one tool.</p>
-          <a href="https://www.notion.so/" target="_blank" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition">Explore Notion</a>
+        <!-- Notion -->
+        <div class="affiliate-card bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="300">
+          <img src="data:image/png;base64,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" alt="Notion" class="w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-gray-900">Notion</h3>
+          <p class="text-gray-600 mt-2">An all-in-one workspace for notes, tasks, wikis, and databases.</p>
+          <a href="https://www.notion.so/" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition" target="_blank">Get Notion</a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer id="contact" class="bg-gray-900 text-white py-10">
     <div class="container mx-auto px-4 text-center">
-      <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+      <h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
       <p class="text-gray-400 mb-4">Email us at <a href="mailto:support@affiliatehub.com" class="underline hover:text-blue-400">support@affiliatehub.com</a></p>
       <p class="text-gray-400">© 2025 Amazing Affiliate Hub. All rights reserved.</p>
+      <p class="text-gray-400 mt-2">Disclosure: We may earn a commission from links on this page at no extra cost to you.</p>
     </div>
   </footer>
 
-  <script>AOS.init();</script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
