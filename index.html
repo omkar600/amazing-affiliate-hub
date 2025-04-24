@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover top affiliate picks for programming tools, fitness gear, and online courses. Curated to help you grow.">
   <title>Amazing Affiliate Hub</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -32,7 +33,7 @@
   <header class="sticky-header fixed top-0 w-full z-50 bg-blue-800 text-white py-4">
     <div class="container mx-auto px-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold">Amazing Affiliate Hub</h1>
-      <nav>
+      <nav class="hidden md:flex">
         <a href="#affiliates" class="px-4 hover:text-blue-300">Affiliates</a>
         <a href="#testimonials" class="px-4 hover:text-blue-300">Testimonials</a>
         <a href="#contact" class="px-4 hover:text-blue-300">Contact</a>
@@ -56,21 +57,21 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Programming Tools -->
         <div class="affiliate-card bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
-          <img src="https://via.placeholder.com/300x200" alt="Programming Tools" class="w-full h-48 object-cover rounded-md mb-4">
+          <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="Visual Studio Code" class="w-full h-48 object-cover rounded-md mb-4">
           <h3 class="text-2xl font-semibold text-gray-900">Programming Tools</h3>
           <p class="text-gray-600 mt-2">Essential dev tools to boost your productivity.</p>
           <a href="tools.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition">Explore Tools</a>
         </div>
         <!-- Fitness Gears -->
         <div class="affiliate-card bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
-          <img src="https://via.placeholder.com/300x200" alt="Fitness Gear" class="w-full h-48 object-cover rounded-md mb-4">
+       <img src="https://www.theflexnest.com/cdn/shop/products/1_26f7cabd-aa5a-4256-9c47-24833f009086.jpg?v=1635230112" alt="Fitness Gear" class="w-full h-48 object-cover rounded-md mb-4">
           <h3 class="text-2xl font-semibold text-gray-900">Fitness Gears</h3>
           <p class="text-gray-600 mt-2">High-quality gear to elevate your workouts.</p>
           <a href="gears.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition">Shop Fitness</a>
         </div>
         <!-- Courses -->
         <div class="affiliate-card bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="300">
-          <img src="https://via.placeholder.com/300x200" alt="Courses" class="w-full h-48 object-cover rounded-md mb-4">
+          <img src="https://img-c.udemycdn.com/course/750x422/1565838_e54e_16.jpg" alt="Online Courses" class="w-full h-48 object-cover rounded-md mb-4">
           <h3 class="text-2xl font-semibold text-gray-900">Online Courses</h3>
           <p class="text-gray-600 mt-2">Top-rated courses to expand your skills.</p>
           <a href="courses.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition">View Courses</a>
@@ -84,7 +85,9 @@
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-6" data-aos="fade-up">Stay Updated</h2>
       <p class="text-center text-gray-600 mb-6">Subscribe to get the latest updates on tools, gear, and deals.</p>
-      <form action="https://formsubmit.co/omkarjgore20@example.com" method="POST" class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto" data-aos="fade-up">
+      <form action="https://formsubmit.co/omkarjgore20@gmail.com" method="POST" class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto" data-aos="fade-up">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://omkar600.github.io/amazing-affiliate-hub/thankyou.html">
         <input type="email" name="email" required placeholder="Enter your email" class="flex-1 px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
         <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Subscribe</button>
       </form>
